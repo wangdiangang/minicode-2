@@ -1,0 +1,11 @@
+.gtn-container {
+  position: fixed;
+  width: 104rpx;
+  height: 104rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0bec78;
+  border-radius: 50%;
+  z-index: 9999;
+}

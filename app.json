@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/square/index",
+    "pages/order/index",
+    "pages/release/index",
+    "pages/message/index",
+    "pages/mine/index"
+  ],
+  "subPackages":[
+    {
+      "root":"pagesA",
+      "pages":[
+        "suance/index"
+      ]
+    }
+  ],
+  "tabBar": {
+    "custom": true,
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/square/index",
+        "text": "广场"
+      },
+      {
+        "pagePath": "pages/order/index",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/message/index",
+        "text": "消息"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

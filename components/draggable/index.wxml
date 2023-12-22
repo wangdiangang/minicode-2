@@ -1,0 +1,9 @@
+<view 
+class="gtn-container"
+bindtap="handleTap"
+ bindtouchstart="buttonStart" 
+ catch:touchmove="buttonMove"
+ catch:touchend="buttonEnd"
+    style="top:{{buttonTop}}px;left:{{buttonLeft}}px">
+    发
+   </view>

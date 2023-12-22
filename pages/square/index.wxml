@@ -1,0 +1,31 @@
+<view class="intro">
+<van-button type="info" bind:click='onButton'>广场{{num}}</van-button>
+<van-divider contentPosition="center">文本</van-divider>
+<draggable-button buttonText="Drag"></draggable-button>
+
+<van-tabs ellipsis="{{false}}" sticky animated active="{{ active }}" bind:change="onChange">
+  <van-tab wx:for="{{ tabsList }}" wx:key="index" title="{{item.time}}">
+  <view wx:for="{{item.list}}" wx:for-item="otem" wx:key="index" class='card'>
+    <view class="card-header">
+      <view class="card-header_img">头像</view>
+      <view class="card-header_title">
+        <view class="card-header_title_time">{{otem.time}} 出发</view>
+        <view class="card-header_title_name">{{otem.name}} |{{otem.homeDress}}</view>
+      </view>
+      <view class="card-header_num">余座 {{otem.num}}</view>
+    </view>
+    <view class="card-up_car">
+      <view class='up_car'>上</view>
+      <text class="address">{{otem.upAddress}}</text>
+    </view>
+     <view class="card-down_car">
+      <view class="down_car">下</view>
+      <text>{{otem.downAddress}}</text>
+    </view>
+    <view class="notes" wx:if="{{otem.notes}}">备注:{{otem.notes}}</view>
+
+
+  </view>
+  </van-tab>
+</van-tabs>
+</view>

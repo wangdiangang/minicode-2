@@ -1,0 +1,54 @@
+.intro{
+  padding: 20rpx;
+
+  padding-bottom: 50px;
+}
+.card{
+  /* height: 300rpx; */
+  background:#efefef;
+  border-radius:20rpx;
+  margin-top:30rpx;
+  padding: 20rpx;
+}
+.card .card-header{
+  display: flex;
+  align-items: center;
+}
+.card .card-header .card-header_title{
+  
+  margin-left: 50rpx;
+}
+.card .card-header .card-header_num{
+  margin-left: 200rpx;
+}
+.card .card-up_car,
+.card .card-down_car{
+  /* display: flex; */
+  margin-top: 20rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+.card .card-up_car{
+  
+}
+.card .up_car,
+.card .down_car{
+  margin-right: 20rpx;
+  width: 46rpx;
+  height: 46rpx;
+  text-align: center;
+  line-height: 46rpx;
+  color: #fff;
+  display: inline-block;
+  background-color: rgb(9, 205, 85);
+  font-size: 26rpx;
+  border-radius: 50%;
+}
+.card .down_car{
+  background-color: rgb(40, 66, 65);
+}
+.card .notes{
+  margin-top: 20rpx;
+}
